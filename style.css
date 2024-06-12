@@ -4,7 +4,7 @@
   
   /* Estilo do body */
   body {
-    font-family: 'Neuton', serif;
+    font-family: 'preconnect', serif;
     margin: 0;
     background-color: rgb(255, 255, 255);
   
@@ -14,7 +14,7 @@
   .cabecalho {
     padding: 80px;
     text-align: center;
-    background:#2f5222	;
+    background:#7F9760	;
     color:#ffffff		;
   }
   
@@ -26,7 +26,7 @@
   /* Barra de navegação no topo */
   .navbar {
     overflow: hidden;
-    background-color: #2f5222	;
+    background-color: #7d945e	;
   }
   
   /* Estilo da barra de navegação */
@@ -48,7 +48,7 @@
   /* Muda cor quando o mouse passa */
   .navbar a:hover {
     background-color: rgb(0, 0, 0)	;
-    color: #2f5222;
+    color: #7F9760;
   }
   
   /* Container da Coluna */
@@ -102,7 +102,7 @@
     
     /*efeito quando passa o mouse na caixa do produto*/
     .produto:hover {
-      box-shadow: 0 10px 26px 0 rgb(61, 136, 61);
+      box-shadow: 0 10px 26px 0 rgb(125, 148, 94);
       transform: scale(1.2);
     }
     
