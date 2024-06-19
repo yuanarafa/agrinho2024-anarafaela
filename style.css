@@ -95,10 +95,13 @@
   .produto {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
-      width: auto;
+      width: 500px;
       margin: 50px;
       border-radius: 10px;
-    }
+      position: relative;
+      top: 50px;
+      left: 70px;
+  }
     
     /*efeito quando passa o mouse na caixa do produto*/
     .produto:hover {
@@ -110,18 +113,6 @@
     .caixa-produto {
       padding: 2px 16px;
     }
-  
-  /* id para ajustar a imagem do produto*/
-  #img-produto {
-      max-height: 360px;
-      width: auto;
-      padding: 6px;
-  }
-  
-  #img-produto2 {
-    max-height: 360px;
-    width: auto;
-  }
   
   #menu {
       position: absolute;
@@ -135,3 +126,4 @@
       width: 50px;
       border-radius: 10px;
   }
+
