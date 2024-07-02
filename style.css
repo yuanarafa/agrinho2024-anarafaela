@@ -1,129 +1,135 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  font-family: 'preconnect', serif;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+
+}
+
+/* Cabeçalho / Logo */
+.cabecalho {
+  padding: 80px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url(soleplantacao.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#ffffff		;
+}
+
+/* Ajusta o tamanho da fonte do cabeçalho */
+.cabecalho h1 {
+  font-size: 40px;
+}
+
+/* Barra de navegação no topo */
+.navbar {
+  overflow: hidden;
+  background-color: #7d945e	;
+}
+
+/* Estilo da barra de navegação */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Alinha o link na direita */
+.navbar a.right {
+  float: right;
+}
+
+/* Muda cor quando o mouse passa */
+.navbar a:hover {
+  background-color: rgb(0, 0, 0)	;
+  color: #7F9760;
+}
+
+/* Container da Coluna */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Main */
+.principal {
+  display: flex;   
+  flex: 70%;
+  padding: 20px;
+  justify-content: center;
+  color: black;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+/* Responsive layout - quando a tela for menor que 700px o conteúdo fica um em cima do outro*/
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
   }
-  
-  /* Estilo do body */
-  body {
-    font-family: 'preconnect', serif;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-  
-  }
-  
-  /* Cabeçalho / Logo */
-  .cabecalho {
-    padding: 80px;
-    text-align: center;
-    background:#7F9760	;
-    color:#ffffff		;
-  }
-  
-  /* Ajusta o tamanho da fonte do cabeçalho */
-  .cabecalho h1 {
-    font-size: 40px;
-  }
-  
-  /* Barra de navegação no topo */
-  .navbar {
-    overflow: hidden;
-    background-color: #7d945e	;
-  }
-  
-  /* Estilo da barra de navegação */
+}
+
+/* Responsive layout - links encima um do outro quando a tela for menor que 400px */
+@media screen and (max-width: 400px) {
   .navbar a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 20px;
+    float: none;
+    width: 100%;
+  }
+}
+
+/*detalhes da caixa do produto*/
+.produto {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    width: 500px;
+    margin: 50px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 70px;
+}
+  
+  /*efeito quando passa o mouse na caixa do produto*/
+  .produto:hover {
+    box-shadow: 0 10px 26px 0 rgb(125, 148, 94);
+    transform: scale(1.2);
   }
   
-  /* Alinha o link na direita */
-  .navbar a.right {
-    float: right;
-  }
-  
-  /* Muda cor quando o mouse passa */
-  .navbar a:hover {
-    background-color: rgb(0, 0, 0)	;
-    color: #7F9760;
-  }
-  
-  /* Container da Coluna */
-  .row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-  }
-  
-  /* Main */
-  .principal {
-    display: flex;   
-    flex: 70%;
-    padding: 20px;
-    justify-content: center;
-    color: black;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: white;
-    color: black;
-  }
-  
-  /* Responsive layout - quando a tela for menor que 700px o conteúdo fica um em cima do outro*/
-  @media screen and (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
-  }
-  
-  /* Responsive layout - links encima um do outro quando a tela for menor que 400px */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  }
-  
-  /*detalhes da caixa do produto*/
-  .produto {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-      width: 500px;
-      margin: 50px;
-      border-radius: 10px;
-      position: relative;
-      top: 50px;
-      left: 70px;
-  }
-    
-    /*efeito quando passa o mouse na caixa do produto*/
-    .produto:hover {
-      box-shadow: 0 10px 26px 0 rgb(125, 148, 94);
-      transform: scale(1.2);
-    }
-    
-    /*cria a caixa do produto*/
-    .caixa-produto {
-      padding: 2px 16px;
-    }
-  
-  #menu {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      color: white;
-  }
-  
-  #menu img {
-      height: 50px;
-      width: 50px;
-      border-radius: 10px;
+  /*cria a caixa do produto*/
+  .caixa-produto {
+    padding: 2px 16px;
   }
 
+#menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+#menu img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
